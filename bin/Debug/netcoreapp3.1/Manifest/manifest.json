@@ -1,0 +1,49 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.9/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.9",
+  "version": "1.0.0",
+  "id": "d90273f3-3f3a-496a-87f8-87bdd985fcb1",
+  "packageName": "xyz.code365",
+  "developer": {
+    "name": "Code365.xyz",
+    "websiteUrl": "https://code365.xyz",
+    "privacyUrl": "https://code365.xyz",
+    "termsOfUseUrl": "https://code365.xyz"
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "name": {
+    "short": "所有人",
+    "full": "所有人"
+  },
+  "description": {
+    "short": "在群里中@所有人",
+    "full": "在群里中@所有人"
+  },
+  "accentColor": "#FFFFFF",
+  "bots": [
+    {
+      "botId": "978c16a7-70f4-44fb-92a6-813a84719017",
+      "scopes": ["groupchat"],
+      "supportsFiles": false,
+      "isNotificationOnly": false
+    }
+  ],
+  "permissions": ["identity", "messageTeamMembers"],
+  "validDomains": [],
+  "webApplicationInfo": {
+    "id": "978c16a7-70f4-44fb-92a6-813a84719017",
+    "resource": "https://code365.xyz"
+  },
+  "activities": {
+    "activityTypes": [
+      {
+        "type": "metionall",
+        "description": "全员消息",
+        "templateText": "{from} 提醒你: {message} "
+      }
+    ]
+  }
+}
